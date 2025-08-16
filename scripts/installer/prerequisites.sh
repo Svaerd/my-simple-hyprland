@@ -11,13 +11,13 @@ print_info "\nStarting prerequisites setup..."
 
 run_command "pacman -Syyu --noconfirm" "Update package database and upgrade packages (Recommended)" "yes" # no
 
-if command -v yay > /dev/null; then
-    print_info "Skipping yay installation (already installed)."
-elif run_command "pacman -S --noconfirm --needed git base-devel" "Install YAY (Must)/Breaks the script" "yes"; then # 
-    run_command "git clone https://aur.archlinux.org/yay.git && cd yay" "Clone YAY (Must)/Breaks the script" "no" "no" 
-    run_command "makepkg --noconfirm -si && cd .. # builds with makepkg" "Build YAY (Must)/Breaks the script" "no" "no" 
+if command -v yay >/dev/null; then
+	print_info "Skipping yay installation (already installed)."
+elif run_command "pacman -S --noconfirm --needed git base-devel" "Install YAY (Must)/Breaks the script" "yes"; then #
+	run_command "git clone https://aur.archlinux.org/yay.git && cd yay" "Clone YAY (Must)/Breaks the script" "no" "no"
+	run_command "makepkg --noconfirm -si && cd .. # builds with makepkg" "Build YAY (Must)/Breaks the script" "no" "no"
 fi
-run_command "pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl" "Configuring audio and brightness (Recommended)" "yes" 
+run_command "pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl" "Configuring audio and brightness (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes"
 
@@ -31,4 +31,4 @@ run_command "pacman -S --noconfirm nvim" "Install nvim" "yes"
 
 run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (Must)/needed for copying themes" "yes"
 
-echo "------------------------------------------------------------------------"echo "------------------------------------------------------------------------"
+echo "------------------------------------------------------------------------"
