@@ -29,6 +29,6 @@ run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm nvim" "Install nvim" "yes"
 
-run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)/needed for copying themes" "yes"
+run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (Must)/needed for copying themes" "yes"
 
-echo "------------------------------------------------------------------------"
+echo "------------------------------------------------------------------------"echo "------------------------------------------------------------------------"
