@@ -9,11 +9,11 @@ source $BASE_DIR/scripts/installer/helper.sh
 log_message "Installation started for utilities section"
 print_info "\nStarting utilities setup..."
 
-run_command "pacman -S --noconfirm waybar" "Install Waybar - Status Bar" "yes"
-run_command "cp -r $BASE_DIR/configs/waybar /home/$SUDO_USER/.config/" "Copy Waybar config" "yes" "no"
+run_command "pacman -S --noconfirm hyprpanel" "Install Hyprpanel - Status Bar" "yes"
+run_command "ln --symbolic $BASE_DIR/configs/hyprpanel /home/$SUDO_USER/.config/" "Copy Hyprpanel config" "yes" "no"
 
-run_command "yay -S --sudoloop --noconfirm tofi" "Install Tofi - Application Launcher" "yes" "no"
-run_command "cp -r $BASE_DIR/configs/tofi /home/$SUDO_USER/.config/" "Copy Tofi config(s)" "yes" "no"
+run_command "yay -S --sudoloop --noconfirm rofi" "Install rofi - Application Launcher" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/rofi /home/$SUDO_USER/.config/" "Copy rofi config(s)" "yes" "no"
 
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
 
