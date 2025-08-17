@@ -15,10 +15,10 @@ run_command "mkdir -p /home/$SUDO_USER/.config/hypr/ && ln --symbolic $BASE_DIR/
 
 run_command "pacman -S --noconfirm xdg-desktop-portal-hyprland" "Install XDG desktop portal for Hyprland" "yes"
 
-run_command "pacman -S --noconfirm polkit-kde-agent" "Install KDE Polkit agent for authentication dialogs" "yes"
+run_command "pacman -S --noconfirm hyprpolkitagent" "Install KDE Polkit agent for authentication dialogs" "yes"
 
 # run_command "pacman -S --noconfirm dunst" "Install Dunst notification daemon" "yes"
-# run_command "ln --symbolic $BASE_DIR/configs/dunst /home/$SUDO_USER/.config/" "Copy dunst config" "yes" "no"
+# run_command "ln --symbolic $BASE_DIR/configs/dunst /home/$SUDO_USER/.config/" "Symlink dunst config" "yes" "no"
 
 run_command "pacman -S --noconfirm qt5-wayland qt6-wayland" "Install QT support on wayland" "yes"
 
