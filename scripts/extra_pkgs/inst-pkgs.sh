@@ -7,7 +7,7 @@ BASE_DIR=$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../")
 # sudo pacman -Syu --noconfirm
 
 # Define the package files
-PACKAGES_FILE="$BASE_DIR/my-simple-hyprland/scripts/extra_pkgs/pkgs_list.lst"
+PACKAGES_FILE="$BASE_DIR/scripts/extra_pkgs/pkgs_list.lst"
 
 # You can update the list manually by changing the ".lst" file or even using your own file
 # OR, you could also
