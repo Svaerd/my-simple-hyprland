@@ -9,7 +9,8 @@ source $BASE_DIR/scripts/installer/helper.sh
 log_message "Installation started for theming section"
 print_info "\nStarting theming setup..."
 
-run_command "pacman -S --noconfirm nwg-look" "Install nwg-look for GTK theme management" "yes" "no"
+# Bibata cursor
+run_command "tar -xvf $BASE_DIR/assets/cursor/Bibata-Modern-Ice.tar.xz -C /usr/share/icons/" "Install Bibata-Modern-Ice as the cursor theme" "yes"
 
 run_command "pacman -S --noconfirm qt5ct qt6ct kvantum" "Install Qt5, Qt6 Settings, and Kvantum theme engines" "yes" "no"
 
