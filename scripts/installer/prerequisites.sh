@@ -4,29 +4,42 @@
 BASE_DIR=$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../")
 
 # Source helper file
-source $BASE_DIR/scripts/installer/helper.sh
+source "$BASE_DIR/scripts/installer/helper.sh"
 
 log_message "Installation started for prerequisites section"
 print_info "\nStarting prerequisites setup..."
 
+# Update package
 run_command "pacman -Syyu --noconfirm" "Update package database and upgrade packages (Recommended)" "yes" # no
 
+# Install yay if not installed already
 if command -v yay >/dev/null; then
 	print_info "Skipping yay installation (already installed)."
 elif run_command "pacman -S --noconfirm --needed git base-devel" "Install YAY (Must)/Breaks the script" "yes"; then #
 	run_command "git clone https://aur.archlinux.org/yay.git && cd yay" "Clone YAY (Must)/Breaks the script" "no" "no"
 	run_command "makepkg --noconfirm -si && cd .. # builds with makepkg" "Build YAY (Must)/Breaks the script" "no" "no"
 fi
+
+# Configuring audio and brightness
 run_command "pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl" "Configuring audio and brightness (Recommended)" "yes"
 
+# Fonts
 run_command "pacman -S --noconfirm ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes"
 
+# SDDM
 run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
+run_command "yay -S --sudoloop --noconfirm sddm-astronaut-theme 
+&& touch /etc/sddm.conf 
+&& echo "[Theme]
+Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf" "Install SDDM Theme and apply"
 
+# Browser
 run_command "yay -S --sudoloop --noconfirm vivaldi" "Install Vivaldi Browser" "yes" "no"
 
-run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
+# Kitty
+run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes"
 
+# Neovim
 run_command "pacman -S --noconfirm nvim" "Install nvim" "yes"
 run_command "ln --symbolic $BASE_DIR/configs/nvim /home/$SUDO_USER/.config/" "Symlink nvim config" "yes" "no"
 
