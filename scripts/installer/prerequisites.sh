@@ -28,6 +28,7 @@ run_command "yay -S --sudoloop --noconfirm vivaldi" "Install Vivaldi Browser" "y
 run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm nvim" "Install nvim" "yes"
+run_command "ln --symbolic $BASE_DIR/configs/nvim /home/$SUDO_USER/.config/" "Symlink nvim config" "yes" "no"
 
 run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (Must)/needed for copying themes" "yes"
 
