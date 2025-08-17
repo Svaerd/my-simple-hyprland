@@ -9,7 +9,7 @@ source $BASE_DIR/scripts/installer/helper.sh
 log_message "Installation started for utilities section"
 print_info "\nStarting utilities setup..."
 
-run_command "pacman -S --noconfirm hyprpanel" "Install Hyprpanel - Status Bar" "yes"
+run_command "yay -S --noconfirm hyprpanel" "Install Hyprpanel - Status Bar" "yes"
 run_command "ln --symbolic $BASE_DIR/configs/hyprpanel /home/$SUDO_USER/.config/" "Copy Hyprpanel config" "yes" "no"
 
 run_command "yay -S --sudoloop --noconfirm rofi" "Install rofi - Application Launcher" "yes" "no"
