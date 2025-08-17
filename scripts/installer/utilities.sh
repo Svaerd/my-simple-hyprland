@@ -17,8 +17,7 @@ run_command "ln --symbolic $BASE_DIR/configs/rofi /home/$SUDO_USER/.config/" "Co
 
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
 
-run_command "yay -S --sudoloop --noconfirm swww" "Install SWWW for wallpaper management" "yes" "no"
-run_command "mkdir -p /home/$SUDO_USER/.config/assets/backgrounds && ln --symbolic $BASE_DIR/assets/backgrounds /home/$SUDO_USER/.config/assets/" "Copy sample wallpapers to assets directory (Recommended)" "yes" "no"
+run_command "yay -S --sudoloop --noconfirm swww waypaper" "Install SWWW and Waypaper for wallpaper management" "yes" "no"
 
 run_command "yay -S --sudoloop --noconfirm hyprpicker" "Install Hyprpicker - Color Picker" "yes" "no"
 
