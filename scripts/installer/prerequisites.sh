@@ -38,6 +38,7 @@ run_command "yay -S --sudoloop --noconfirm vivaldi" "Install Vivaldi Browser" "y
 
 # Kitty
 run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/kitty /home/$SUDO_USER/.config/" "Symlink Catppuccin theme configuration for Kitty terminal" "yes" "no"
 
 # Neovim
 run_command "pacman -S --noconfirm nvim" "Install nvim" "yes"
@@ -48,5 +49,8 @@ run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (
 
 # Gnome
 run_command "pacman -S --noconfirm gnome-shell" "Install Gnome for easier theming" "yes" "no"
+
+# Flatpak
+run_command "pacman -S --noconfirm flatpak" "Install flatpak - Linux application sandboxing and distribution framework" "yes"
 
 echo "------------------------------------------------------------------------"
