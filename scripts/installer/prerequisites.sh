@@ -27,7 +27,7 @@ run_command "pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl" "
 run_command "pacman -S --noconfirm ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes"
 
 # SDDM
-run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
+run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes" "no"
 run_command "yay -S --sudoloop --noconfirm sddm-astronaut-theme 
 && touch /etc/sddm.conf 
 && echo "[Theme]
@@ -37,12 +37,16 @@ Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf" "Install SDDM Theme and
 run_command "yay -S --sudoloop --noconfirm vivaldi" "Install Vivaldi Browser" "yes" "no"
 
 # Kitty
-run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes"
+run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes" "no"
 
 # Neovim
 run_command "pacman -S --noconfirm nvim" "Install nvim" "yes"
 run_command "ln --symbolic $BASE_DIR/configs/nvim /home/$SUDO_USER/.config/" "Symlink nvim config" "yes" "no"
 
-run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (Must)/needed for copying themes" "yes"
+# tar and 7zip
+run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (Must)/needed for copying themes" "yes" "no"
+
+# Gnome
+run_command "pacman -S --noconfirm gnome-shell" "Install Gnome for easier theming" "yes" "no"
 
 echo "------------------------------------------------------------------------"
