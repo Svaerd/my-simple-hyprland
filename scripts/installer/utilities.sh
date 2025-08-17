@@ -9,31 +9,51 @@ source $BASE_DIR/scripts/installer/helper.sh
 log_message "Installation started for utilities section"
 print_info "\nStarting utilities setup..."
 
-run_command "yay -S --noconfirm hyprpanel" "Install Hyprpanel - Status Bar" "yes"
+# Hyprpanel
+run_command "yay -S --sudoloop --noconfirm ags-hyprpanel-git" "Install Hyprpanel - Status Bar" "yes"
 run_command "ln --symbolic $BASE_DIR/configs/hyprpanel /home/$SUDO_USER/.config/" "Symlink Hyprpanel config" "yes" "no"
 
+# Rofi
 run_command "yay -S --sudoloop --noconfirm rofi" "Install rofi - Application Launcher" "yes" "no"
 run_command "ln --symbolic $BASE_DIR/configs/rofi /home/$SUDO_USER/.config/" "Symlink rofi config(s)" "yes" "no"
 
+# Cliphist
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
 
+# Wallpaper
 run_command "yay -S --sudoloop --noconfirm swww waypaper" "Install SWWW and Waypaper for wallpaper management" "yes" "no"
 
+# Hypr utils
 run_command "yay -S --sudoloop --noconfirm hyprpicker" "Install Hyprpicker - Color Picker" "yes" "no"
 
 run_command "yay -S --sudoloop --noconfirm hyprlock" "Install Hyprlock - Screen Locker (Must)" "yes" "no"
 run_command "ln --symbolic $BASE_DIR/configs/hypr/hyprlock.conf /home/$SUDO_USER/.config/hypr/" "Symlink Hyprlock config" "yes" "no"
 
-run_command "yay -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
-run_command "ln --symbolic $BASE_DIR/configs/wlogout /home/$SUDO_USER/.config/ && ln --symbolic $BASE_DIR/assets/wlogout /home/$SUDO_USER/.config/assets/" "Symlink Wlogout config and assets" "yes" "no"
-
-run_command "yay -S --sudoloop --noconfirm grimblast" "Install Grimblast - Screenshot tool" "yes" "no"
-
 run_command "yay -S --sudoloop --noconfirm hypridle" "Install Hypridle for idle management (Must)" "yes" "no"
 run_command "ln --symbolic $BASE_DIR/configs/hypr/hypridle.conf /home/$SUDO_USER/.config/hypr/" "Symlink Hypridle config" "yes" "no"
 
+# Wlogout
+run_command "yay -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/wlogout /home/$SUDO_USER/.config/ && mkdir /home/$SUDO_USER/.config/assets && ln --symbolic $BASE_DIR/assets/wlogout /home/$SUDO_USER/.config/assets/" "Symlink Wlogout config and assets" "yes" "no"
+
+# Grimblast, Screenshot
+run_command "yay -S --sudoloop --noconfirm grimblast-git" "Install Grimblast - Screenshot tool" "yes" "no"
+
+# Fish
 run_command "pacman -S --noconfirm fish" "Install fish - The friendly interactive shell" "yes" "no"
 run_command "ln --symbolic $BASE_DIR/configs/fish /home/$SUDO_USER/.config/fish" "Symlink Fish config" "yes" "no"
 run_command "chsh --shell /usr/bin/fish" "Change login/default shell to Fish" "yes" "no"
+
+# Keyd
+run_command "pacman -S --noconfirm keyd && systemctl enable --now keyd" "Install Keyd - A key remapping daemon for linux" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/keyd/default.conf /etc/keyd/ && keyd reload" "Symlink apply Keyd config" "yes" "no"
+
+# Fastfetch
+run_command "pacman -S --noconfirm fastfetch" "Install Fastfetch - performance focus system information tool" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/fastfetch /home/$SUDO_USER/.config/fastfetch" "Symlink Fastfetch config" "yes" "no"
+
+# Yazi
+run_command "pacman -S --noconfirm yazi" "Install Yazi - TUI file manager" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/yazi /home/$SUDO_USER/.config/yazi" "Symlink Yazi config" "yes" "no"
 
 echo "------------------------------------------------------------------------"
