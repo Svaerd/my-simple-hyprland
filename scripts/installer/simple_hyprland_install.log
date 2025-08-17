@@ -1,0 +1,133 @@
+Sun Aug 17 02:16:20 PM WIB 2025: Installation started
+Sun Aug 17 02:16:20 PM WIB 2025: Original user is sammm
+Sun Aug 17 02:16:23 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:16:24 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:16:24 PM WIB 2025: Installation started for prerequisites section
+Sun Aug 17 02:16:24 PM WIB 2025: Attempting to run: Update package database and upgrade packages (Recommended)
+Sun Aug 17 02:16:27 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:16:30 PM WIB 2025: Update package database and upgrade packages (Recommended) completed successfully.
+Sun Aug 17 02:16:30 PM WIB 2025: Attempting to run: Configuring audio and brightness (Recommended)
+Sun Aug 17 02:16:34 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:16:37 PM WIB 2025: Configuring audio and brightness (Recommended) completed successfully.
+Sun Aug 17 02:16:37 PM WIB 2025: Attempting to run: Installing Nerd Fonts and Symbols (Recommended)
+Sun Aug 17 02:16:41 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:16:47 PM WIB 2025: Installing Nerd Fonts and Symbols (Recommended) completed successfully.
+Sun Aug 17 02:16:47 PM WIB 2025: Attempting to run: Install and enable SDDM (Recommended)
+Sun Aug 17 02:16:50 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:16:52 PM WIB 2025: Install and enable SDDM (Recommended) completed successfully.
+Sun Aug 17 02:16:52 PM WIB 2025: Attempting to run: Install Vivaldi Browser
+Sun Aug 17 02:17:05 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:17:33 PM WIB 2025: Install Vivaldi Browser completed successfully.
+Sun Aug 17 02:17:33 PM WIB 2025: Attempting to run: Install Kitty (Recommended)
+Sun Aug 17 02:17:35 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:17:39 PM WIB 2025: Install Kitty (Recommended) completed successfully.
+Sun Aug 17 02:17:39 PM WIB 2025: Attempting to run: Install nvim
+Sun Aug 17 02:17:40 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:17:43 PM WIB 2025: Install nvim completed successfully.
+Sun Aug 17 02:17:43 PM WIB 2025: Attempting to run: Symlink nvim config
+Sun Aug 17 02:17:47 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:17:48 PM WIB 2025: Symlink nvim config completed successfully.
+Sun Aug 17 02:17:48 PM WIB 2025: Attempting to run: Install tar for extracting files (Must)/needed for copying themes
+Sun Aug 17 02:17:49 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:17:52 PM WIB 2025: Install tar for extracting files (Must)/needed for copying themes completed successfully.
+Sun Aug 17 02:17:55 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:17:55 PM WIB 2025: Installation started for hypr section
+Sun Aug 17 02:17:55 PM WIB 2025: Attempting to run: Install Hyprland (Must)
+Sun Aug 17 02:17:55 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:18:09 PM WIB 2025: Install Hyprland (Must) completed successfully.
+Sun Aug 17 02:18:09 PM WIB 2025: Attempting to run: Create symbolic link for hyprland config (Must)
+Sun Aug 17 02:18:13 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:18:13 PM WIB 2025: Create symbolic link for hyprland config (Must) completed successfully.
+Sun Aug 17 02:18:13 PM WIB 2025: Attempting to run: Install XDG desktop portal for Hyprland
+Sun Aug 17 02:18:16 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:18:18 PM WIB 2025: Install XDG desktop portal for Hyprland completed successfully.
+Sun Aug 17 02:18:18 PM WIB 2025: Attempting to run: Install KDE Polkit agent for authentication dialogs
+Sun Aug 17 02:18:19 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:18:21 PM WIB 2025: Install KDE Polkit agent for authentication dialogs completed successfully.
+Sun Aug 17 02:18:21 PM WIB 2025: Attempting to run: Install QT support on wayland
+Sun Aug 17 02:18:27 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:18:33 PM WIB 2025: Install QT support on wayland completed successfully.
+Sun Aug 17 02:18:37 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:18:37 PM WIB 2025: Installation started for utilities section
+Sun Aug 17 02:18:37 PM WIB 2025: Attempting to run: Install Hyprpanel - Status Bar
+Sun Aug 17 02:18:41 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:18:53 PM WIB 2025: Command failed: yay -S --noconfirm hyprpanel
+Sun Aug 17 02:19:02 PM WIB 2025: Operation cancelled by user.
+Sun Aug 17 02:19:02 PM WIB 2025: Install Hyprpanel - Status Bar was not completed due to failure and user chose not to retry.
+Sun Aug 17 02:19:02 PM WIB 2025: Attempting to run: Symlink Hyprpanel config
+Sun Aug 17 02:19:06 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:19:06 PM WIB 2025: Symlink Hyprpanel config completed successfully.
+Sun Aug 17 02:19:06 PM WIB 2025: Attempting to run: Install rofi - Application Launcher
+Sun Aug 17 02:19:08 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:19:12 PM WIB 2025: Install rofi - Application Launcher completed successfully.
+Sun Aug 17 02:19:12 PM WIB 2025: Attempting to run: Symlink rofi config(s)
+Sun Aug 17 02:19:16 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:19:16 PM WIB 2025: Symlink rofi config(s) completed successfully.
+Sun Aug 17 02:19:16 PM WIB 2025: Attempting to run: Install Cliphist - Clipboard Manager
+Sun Aug 17 02:19:18 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:19:20 PM WIB 2025: Install Cliphist - Clipboard Manager completed successfully.
+Sun Aug 17 02:19:20 PM WIB 2025: Attempting to run: Install SWWW and Waypaper for wallpaper management
+Sun Aug 17 02:19:21 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:19:57 PM WIB 2025: Install SWWW and Waypaper for wallpaper management completed successfully.
+Sun Aug 17 02:19:57 PM WIB 2025: Attempting to run: Install Hyprpicker - Color Picker
+Sun Aug 17 02:20:00 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:20:03 PM WIB 2025: Install Hyprpicker - Color Picker completed successfully.
+Sun Aug 17 02:20:03 PM WIB 2025: Attempting to run: Install Hyprlock - Screen Locker (Must)
+Sun Aug 17 02:20:05 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:20:08 PM WIB 2025: Install Hyprlock - Screen Locker (Must) completed successfully.
+Sun Aug 17 02:20:08 PM WIB 2025: Attempting to run: Symlink Hyprlock config
+Sun Aug 17 02:20:14 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:20:14 PM WIB 2025: Symlink Hyprlock config completed successfully.
+Sun Aug 17 02:20:14 PM WIB 2025: Attempting to run: Install Wlogout - Session Manager
+Sun Aug 17 02:20:19 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:20:40 PM WIB 2025: Install Wlogout - Session Manager completed successfully.
+Sun Aug 17 02:20:40 PM WIB 2025: Attempting to run: Symlink Wlogout config and assets
+Sun Aug 17 02:20:48 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:20:48 PM WIB 2025: Command failed: ln --symbolic /home/sammm/my-simple-hyprland/configs/wlogout /home/sammm/.config/ && ln --symbolic /home/sammm/my-simple-hyprland/assets/wlogout /home/sammm/.config/assets/
+Sun Aug 17 02:21:00 PM WIB 2025: Operation cancelled by user.
+Sun Aug 17 02:21:00 PM WIB 2025: Symlink Wlogout config and assets was not completed due to failure and user chose not to retry.
+Sun Aug 17 02:21:00 PM WIB 2025: Attempting to run: Install Grimblast - Screenshot tool
+Sun Aug 17 02:21:16 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:21:31 PM WIB 2025: Install Grimblast - Screenshot tool completed successfully.
+Sun Aug 17 02:21:31 PM WIB 2025: Attempting to run: Install Hypridle for idle management (Must)
+Sun Aug 17 02:21:34 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:21:38 PM WIB 2025: Install Hypridle for idle management (Must) completed successfully.
+Sun Aug 17 02:21:38 PM WIB 2025: Attempting to run: Symlink Hypridle config
+Sun Aug 17 02:21:44 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:21:44 PM WIB 2025: Symlink Hypridle config completed successfully.
+Sun Aug 17 02:21:44 PM WIB 2025: Attempting to run: Install fish - The friendly interactive shell
+Sun Aug 17 02:21:46 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:21:46 PM WIB 2025: Command failed: pacman -S --noconfirm fish
+Sun Aug 17 02:22:03 PM WIB 2025: Operation cancelled by user.
+Sun Aug 17 02:22:03 PM WIB 2025: Install fish - The friendly interactive shell was not completed due to failure and user chose not to retry.
+Sun Aug 17 02:22:03 PM WIB 2025: Attempting to run: Symlink Fish config
+Sun Aug 17 02:22:05 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:05 PM WIB 2025: Symlink Fish config completed successfully.
+Sun Aug 17 02:22:05 PM WIB 2025: Attempting to run: Change login/default shell to Fish
+Sun Aug 17 02:22:08 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:11 PM WIB 2025: Command failed: chsh --shell /usr/bin/fish
+Sun Aug 17 02:22:12 PM WIB 2025: Operation cancelled by user.
+Sun Aug 17 02:22:12 PM WIB 2025: Change login/default shell to Fish was not completed due to failure and user chose not to retry.
+Sun Aug 17 02:22:14 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:14 PM WIB 2025: Installation started for theming section
+Sun Aug 17 02:22:14 PM WIB 2025: Attempting to run: Install nwg-look for GTK theme management
+Sun Aug 17 02:22:14 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:16 PM WIB 2025: Install nwg-look for GTK theme management completed successfully.
+Sun Aug 17 02:22:16 PM WIB 2025: Attempting to run: Install Qt5, Qt6 Settings, and Kvantum theme engines
+Sun Aug 17 02:22:18 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:20 PM WIB 2025: Install Qt5, Qt6 Settings, and Kvantum theme engines completed successfully.
+Sun Aug 17 02:22:20 PM WIB 2025: Attempting to run: Install Catppuccin Mocha GTK theme
+Sun Aug 17 02:22:23 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:23 PM WIB 2025: Install Catppuccin Mocha GTK theme completed successfully.
+Sun Aug 17 02:22:23 PM WIB 2025: Attempting to run: Install Tela Circle Dracula icon theme
+Sun Aug 17 02:22:25 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:32 PM WIB 2025: Install Tela Circle Dracula icon theme completed successfully.
+Sun Aug 17 02:22:32 PM WIB 2025: Attempting to run: Install Catppuccin theme for Kvantum
+Sun Aug 17 02:22:35 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:22:54 PM WIB 2025: Install Catppuccin theme for Kvantum completed successfully.
+Sun Aug 17 02:22:54 PM WIB 2025: Attempting to run: Symlink Catppuccin theme configuration for Kitty terminal
+Sun Aug 17 02:23:03 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:23:03 PM WIB 2025: Symlink Catppuccin theme configuration for Kitty terminal completed successfully.
+Sun Aug 17 02:23:29 PM WIB 2025: Operation accepted by user.
+Sun Aug 17 02:23:29 PM WIB 2025: Final setup script started
+Sun Aug 17 02:23:29 PM WIB 2025: Installation completed successfully

@@ -10,7 +10,7 @@ log_message "Installation started for utilities section"
 print_info "\nStarting utilities setup..."
 
 # Hyprpanel
-run_command "yay -S --sudoloop --noconfirm ags-hyprpanel-git" "Install Hyprpanel - Status Bar" "yes"
+run_command "yay -S --sudoloop --noconfirm ags-hyprpanel-git" "Install Hyprpanel - Status Bar" "yes" "no"
 run_command "ln --symbolic $BASE_DIR/configs/hyprpanel /home/$SUDO_USER/.config/" "Symlink Hyprpanel config" "yes" "no"
 
 # Rofi
@@ -18,19 +18,10 @@ run_command "yay -S --sudoloop --noconfirm rofi" "Install rofi - Application Lau
 run_command "ln --symbolic $BASE_DIR/configs/rofi /home/$SUDO_USER/.config/" "Symlink rofi config(s)" "yes" "no"
 
 # Cliphist
-run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
+run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes" "no"
 
 # Wallpaper
 run_command "yay -S --sudoloop --noconfirm swww waypaper" "Install SWWW and Waypaper for wallpaper management" "yes" "no"
-
-# Hypr utils
-run_command "yay -S --sudoloop --noconfirm hyprpicker" "Install Hyprpicker - Color Picker" "yes" "no"
-
-run_command "yay -S --sudoloop --noconfirm hyprlock" "Install Hyprlock - Screen Locker (Must)" "yes" "no"
-run_command "ln --symbolic $BASE_DIR/configs/hypr/hyprlock.conf /home/$SUDO_USER/.config/hypr/" "Symlink Hyprlock config" "yes" "no"
-
-run_command "yay -S --sudoloop --noconfirm hypridle" "Install Hypridle for idle management (Must)" "yes" "no"
-run_command "ln --symbolic $BASE_DIR/configs/hypr/hypridle.conf /home/$SUDO_USER/.config/hypr/" "Symlink Hypridle config" "yes" "no"
 
 # Wlogout
 run_command "yay -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
