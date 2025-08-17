@@ -30,6 +30,10 @@ run_command "ln --symbolic $BASE_DIR/configs/wlogout /home/$SUDO_USER/.config/ &
 run_command "yay -S --sudoloop --noconfirm grimblast" "Install Grimblast - Screenshot tool" "yes" "no"
 
 run_command "yay -S --sudoloop --noconfirm hypridle" "Install Hypridle for idle management (Must)" "yes" "no"
-run_command "ln --symbolic $BASE_DIR/configs/hypr/hypridle.conf /home/$SUDO_USER/.config/hypr/" "Copy Hypridle config" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/hypr/hypridle.conf /home/$SUDO_USER/.config/hypr/" "Symlink Hypridle config" "yes" "no"
+
+run_command "pacman -S --noconfirm fish" "Install fish - The friendly interactive shell" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/fish /home/$SUDO_USER/.config/fish" "Symlink Fish config" "yes" "no"
+run_command "chsh --shell /usr/bin/fish" "Change login/default shell to Fish" "yes" "no"
 
 echo "------------------------------------------------------------------------"
