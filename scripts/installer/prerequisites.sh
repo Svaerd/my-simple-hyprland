@@ -23,6 +23,9 @@ fi
 # Configuring audio and brightness
 run_command "pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl" "Configuring audio and brightness (Recommended)" "yes"
 
+# Bluetooth
+run_command "pacman -S --noconfirm bluez bluez-utils && systemctl enable Bluetooth" "Install and enable Bluetooth" "yes"
+
 # Fonts
 run_command "pacman -S --noconfirm ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes"
 
