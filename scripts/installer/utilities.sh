@@ -27,8 +27,8 @@ run_command "yay -S --sudoloop --noconfirm swww waypaper" "Install SWWW and Wayp
 run_command "ln --symbolic $BASE_DIR/configs/waypaper /home/$SUDO_USER/.config/" "yes"
 
 # Wlogout
-run_command "yay -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
-run_command "ln --symbolic $BASE_DIR/configs/wlogout /home/$SUDO_USER/.config/ && mkdir /home/$SUDO_USER/.config/assets && ln --symbolic $BASE_DIR/assets/wlogout /home/$SUDO_USER/.config/assets/" "Symlink Wlogout config and assets" "yes" "no"
+# run_command "yay -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
+# run_command "ln --symbolic $BASE_DIR/configs/wlogout /home/$SUDO_USER/.config/ && mkdir /home/$SUDO_USER/.config/assets && ln --symbolic $BASE_DIR/assets/wlogout /home/$SUDO_USER/.config/assets/" "Symlink Wlogout config and assets" "yes"
 
 # Grimblast, Screenshot
 run_command "yay -S --sudoloop --noconfirm grimblast-git" "Install Grimblast - Screenshot tool" "yes" "no"
