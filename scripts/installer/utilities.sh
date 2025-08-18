@@ -22,6 +22,7 @@ run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manag
 
 # Wallpaper
 run_command "yay -S --sudoloop --noconfirm swww waypaper" "Install SWWW and Waypaper for wallpaper management" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/waypaper /home/$SUDO_USER/.config/" "yes"
 
 # Wlogout
 run_command "yay -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
