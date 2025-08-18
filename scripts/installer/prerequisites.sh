@@ -37,18 +37,18 @@ Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf" "Install SDDM Theme and
 run_command "yay -S --sudoloop --noconfirm vivaldi" "Install Vivaldi Browser" "yes" "no"
 
 # Kitty
-run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes" "no"
-run_command "ln --symbolic $BASE_DIR/configs/kitty /home/$SUDO_USER/.config/" "Symlink Catppuccin theme configuration for Kitty terminal" "yes" "no"
+run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes"
+run_command "ln --symbolic $BASE_DIR/configs/kitty /home/$SUDO_USER/.config/" "Symlink Catppuccin theme configuration for Kitty terminal" "yes"
 
 # Neovim
-run_command "pacman -S --noconfirm nvim" "Install nvim" "yes"
-run_command "ln --symbolic $BASE_DIR/configs/nvim /home/$SUDO_USER/.config/" "Symlink nvim config" "yes" "no"
+run_command "pacman -S --noconfirm nvim" "Install nvim - terminal based text editor" "yes"
+run_command "ln --symbolic $BASE_DIR/configs/nvim /home/$SUDO_USER/.config/" "Symlink nvim config" "yes"
 
 # tar and 7zip
-run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (Must)/needed for copying themes" "yes" "no"
+run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (Must)/needed for copying themes" "yes"
 
 # Gnome
-run_command "pacman -S --noconfirm gnome-shell" "Install Gnome for easier theming" "yes" "no"
+# run_command "pacman -S --noconfirm gnome-shell" "Install Gnome for easier theming" "yes"
 
 # Flatpak
 run_command "pacman -S --noconfirm flatpak" "Install flatpak - Linux application sandboxing and distribution framework" "yes"
