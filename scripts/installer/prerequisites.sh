@@ -29,12 +29,6 @@ run_command "pacman -S --noconfirm bluez bluez-utils && systemctl enable Bluetoo
 # Fonts
 run_command "pacman -S --noconfirm ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes"
 
-run_command "yay -S --sudoloop --noconfirm sddm-astronaut-theme 
-&& touch /etc/sddm.conf 
-&& echo "[Theme]
-Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf" "Install SDDM Theme and apply"
-
-
 # Kitty
 run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes"
 run_command "ln --symbolic $BASE_DIR/configs/kitty /home/$SUDO_USER/.config/" "Symlink Catppuccin theme configuration for Kitty terminal" "yes"

@@ -15,6 +15,9 @@ run_command "tar -xvf $BASE_DIR/assets/cursor/Bibata-Modern-Ice.tar.xz -C /usr/s
 # Gnome extension
 # Openbar, for theming
 run_command "ln --symbolic $BASE_DIR/assets/extension/openbar@neuromorph /home/$SUDO_USER/.local/share/gnome-shell/extensions"
+# SDDM astro theme
+run_command "yay -S --sudoloop --noconfirm sddm-astronaut-theme" "install SDDM Theme" "yes" "no"
+run_command "ln --symbolic $BASE_DIR/configs/sddm/sddm.conf /etc/ " "Apply SDDM Theme" "yes"
 
 # run_command "pacman -S --noconfirm nwg-look" "Install nwg-look for GTK theme management" "yes" "no"
 #
