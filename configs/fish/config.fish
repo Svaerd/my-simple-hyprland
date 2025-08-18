@@ -77,3 +77,6 @@ end
 
 # Created by `pipx` on 2025-03-23 07:43:22
 set PATH $PATH /home/archam/.local/bin
+
+# Created by `pipx` on 2025-08-18 09:49:24
+set PATH $PATH /home/dann/.local/bin
