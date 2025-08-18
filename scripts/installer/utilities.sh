@@ -16,6 +16,8 @@ run_command "ln --symbolic $BASE_DIR/configs/hyprpanel /home/$SUDO_USER/.config/
 # Rofi
 run_command "yay -S --sudoloop --noconfirm rofi" "Install rofi - Application Launcher" "yes" "no"
 run_command "ln --symbolic $BASE_DIR/configs/rofi /home/$SUDO_USER/.config/" "Symlink rofi config(s)" "yes"
+# Rofi extension
+run_command "pacman -S --noconfirm rofi-emoji rofi-calc" "Install emoji picker and calculator" "yes"
 
 # Cliphist
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
