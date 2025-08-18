@@ -78,6 +78,9 @@ keymap = [
 	{ on = [ "<C-s>" ],     run = "search none",                                          desc = "Cancel the ongoing search" },
 	{ on = [ "z" ],         run = "jump zoxide",                                          desc = "Jump to a directory using zoxide" },
 	{ on = [ "Z" ],         run = "jump fzf",                                             desc = "Jump to a directory, or reveal a file using fzf" },
+    
+    # zip blocked file using 7zip
+    { on = [ "c", "z" ],    run = """shell 'printf "Your Name:"; read name; 7z a "$name.zip" "$@"' --block --confirm """ },
 
 
 	# Linemode
