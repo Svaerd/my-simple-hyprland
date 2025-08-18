@@ -29,15 +29,11 @@ run_command "pacman -S --noconfirm bluez bluez-utils && systemctl enable Bluetoo
 # Fonts
 run_command "pacman -S --noconfirm ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" "yes"
 
-# SDDM
-run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes" "no"
 run_command "yay -S --sudoloop --noconfirm sddm-astronaut-theme 
 && touch /etc/sddm.conf 
 && echo "[Theme]
 Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf" "Install SDDM Theme and apply"
 
-# Browser
-run_command "yay -S --sudoloop --noconfirm vivaldi" "Install Vivaldi Browser" "yes" "no"
 
 # Kitty
 run_command "pacman -S --noconfirm kitty" "Install Kitty - Terminal emulator (Recommended)" "yes"
@@ -55,5 +51,11 @@ run_command "pacman -S --noconfirm tar 7zip" "Install tar for extracting files (
 
 # Flatpak
 run_command "pacman -S --noconfirm flatpak" "Install flatpak - Linux application sandboxing and distribution framework" "yes"
+
+# SDDM
+run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
+
+# Browser
+run_command "yay -S --sudoloop --noconfirm vivaldi" "Install Vivaldi Browser" "yes" "no"
 
 echo "------------------------------------------------------------------------"
